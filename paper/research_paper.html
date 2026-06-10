@@ -20,12 +20,19 @@
 
     /* â”€â”€ Paper Sheet â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .paper {
-      width: 8.5in;
+      width: 8.27in;
       min-height: 11in;
       margin: 40px auto;
       padding: 1in;             /* 1-inch all sides */
       background: #fff;
       box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+      background-image: repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent calc(11.69in - 3px),
+        #bbb calc(11.69in - 3px),
+        #bbb calc(11.69in)
+      );
     }
 
     /* â”€â”€ Title Block â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
@@ -192,35 +199,37 @@
     }
 
     /* â”€â”€ Print / Export â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-    /* Screen running header */
+    /* ── Screen running header (visible while scrolling) ── */
     .screen-header {
       position: fixed;
       top: 0;
       right: 0;
       z-index: 999;
-      background: rgba(255,255,255,0.92);
-      padding: 5px 14px 4px 14px;
+      background: rgba(255,255,255,0.95);
+      padding: 5px 16px 4px 16px;
       border-bottom-left-radius: 6px;
-      border-bottom: 1px solid #dde;
-      border-left: 1px solid #dde;
+      border-bottom: 1px solid #c5cae9;
+      border-left: 1px solid #c5cae9;
       font-family: "Times New Roman", Times, serif;
       font-size: 9pt;
       font-style: italic;
       color: #1a2e6e;
-      letter-spacing: 0.02em;
       pointer-events: none;
     }
 
-    /* Print: running header + page numbers */
+    /* ── A4 Print: perfect PDF output ────────────────────────── */
     @page {
       size: A4;
-      margin: 1.1in 1in 0.9in 1in;
+      margin: 0.75in 1in 0.8in 1in;
       @top-right {
         content: "Amity University";
         font-family: "Times New Roman", Times, serif;
         font-size: 9pt;
         color: #1a2e6e;
         font-style: italic;
+        vertical-align: bottom;
+        padding-bottom: 4pt;
+        border-bottom: 0.5pt solid #c5cae9;
       }
       @bottom-center {
         content: counter(page);
@@ -230,10 +239,35 @@
       }
     }
 
+    /* Cover page: edge-to-edge, no header/footer */
+    @page cover-pg {
+      size: A4;
+      margin: 0;
+      @top-right  { content: none; }
+      @bottom-center { content: none; }
+    }
+
     @media print {
-      body { background: #fff; }
-      .paper { box-shadow: none; margin: 0; width: 100%; }
-      .cover { box-shadow: none; }
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+      }
+      /* Paper: @page margins are the page margins, so zero out paper padding */
+      .paper {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        background-image: none;
+      }
+      /* Cover fills the entire first page edge-to-edge */
+      .cover {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        box-shadow: none;
+      }
       .screen-header { display: none; }
     }
 
@@ -245,6 +279,7 @@
       background: #fff;
       box-shadow: 0 4px 32px rgba(0,0,0,0.15);
       page-break-after: always;
+      page: cover-pg;
       display: flex;
       flex-direction: column;
       align-items: stretch;
