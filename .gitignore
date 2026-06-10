@@ -1,0 +1,42 @@
+# ── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# ── Virtual environments ───────────────────────────────────
+venv/
+env/
+.venv/
+.env/
+
+# ── Jupyter ────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── OS junk ───────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ── Raw / sensitive data ───────────────────────────────────
+# Large raw CSVs — processed outputs in /data subfolders are kept
+logs/
+*.log
+
+# ── Temporary files ────────────────────────────────────────
+*.ps1
+*.tmp
+*.bak
