@@ -260,12 +260,14 @@
         padding: 0;
         box-shadow: none;
         background-image: none;
+        break-before: page;
       }
       /* Cover fills the entire first page edge-to-edge */
       .cover {
         width: 100%;
-        height: 100vh;
+        height: 297mm;
         margin: 0;
+        overflow: hidden;
         box-shadow: none;
       }
       .screen-header { display: none; }
@@ -275,7 +277,9 @@
     .cover {
       width: 8.27in;
       height: 11.69in;
-      margin: 40px auto;
+      max-height: 11.69in;
+      overflow: hidden;
+      margin: 30px auto;
       background: #fff;
       box-shadow: 0 4px 32px rgba(0,0,0,0.15);
       page-break-after: always;
