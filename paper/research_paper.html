@@ -246,22 +246,22 @@
         Using an XGBoost regression model with temporal lag features, we
         demonstrate that the collapse in P2M ticket sizes follows a non-linear
         adoption curve, with the base model achieving a Root Mean Squared Error
-        (RMSE) of 101.51 â€” a reduction of over 52% compared to the SARIMAX
+        (RMSE) of 101.51 ”” a reduction of over 52% compared to the SARIMAX
         statistical baseline (RMSE: 215). An ablation study further confirms
         that this structural decline is not driven by seasonal or festival
         spending; the festival-augmented model performed marginally worse
         (RMSE: 105.29), establishing the permanence of the trend. Unsupervised
         K-Means clustering of 62 active merchant categories reveals that a
-        dominant "Micro-Utility" cluster â€” anchored by Groceries (ATS:
+        dominant "Micro-Utility" cluster ”” anchored by Groceries (ATS:
         Rs. 253) and Dining &amp; Drinks (ATS: Rs. 121) and accounting for
-        85,590 million transactions â€” is the primary driver of the network-wide
+        85,590 million transactions ”” is the primary driver of the network-wide
         ATS collapse.
       </p>
       <p>
         Market concentration analysis using the Herfindahl-Hirschman Index
         (HHI) exposes a critically centralized app ecosystem, where PhonePe
         and Google Pay collectively command 83.1% of total transaction volume
-        (HHI: 3,383.7 â€” far exceeding the 2,500 threshold for "Highly
+        (HHI: 3,383.7 ”” far exceeding the 2,500 threshold for "Highly
         Concentrated" markets). A predictive bank infrastructure stress test,
         comparing Linear Regression against a Random Forest Regressor,
         confirms that Public Sector Bank server failures (Technical Declines)
@@ -303,7 +303,7 @@
     2026). Singh (2025) documents that UPI has been associated with measurable
     improvements in payment infrastructure supply, higher digital payment
     adoption rates, and positive correlations with formal sector economic
-    growth â€” confirming that UPI's expansion extends well beyond a technological
+    growth ”” confirming that UPI's expansion extends well beyond a technological
     achievement into a structural macroeconomic force. Across a decade, UPI has
     transitioned from a modest interbank transfer utility to the default
     settlement infrastructure for the Indian digital economy, a trajectory
@@ -318,18 +318,18 @@
     retail payments. Invalli (2025), examining shifting payment preferences
     across UPI and card-based instruments, identifies UPI as a "preferred
     payment method for both low-value and high-value transactions," a duality
-    that â€” as this paper demonstrates â€” is increasingly resolving in favour of
+    that ”” as this paper demonstrates ”” is increasingly resolving in favour of
     low-value, high-frequency micro-payments as QR-code infrastructure
     penetrates informal retail. While UPI's aggregate transaction volume has
     scaled exponentially, the value per individual transaction in the P2M
-    segment has collapsed â€” driven by the mass adoption of QR-code-based
+    segment has collapsed ”” driven by the mass adoption of QR-code-based
     micro-payments for essential daily goods such as groceries, fast food, and
     utility recharges. This bifurcation is not merely a statistical curiosity;
     it carries profound and largely unexamined implications for the operational
     stability of the legacy core banking systems that underpin UPI's settlement
     layer. The concentration of micro-transaction processing within a narrow
-    duopoly of consumer-facing applications â€” namely PhonePe and Google Pay,
-    which collectively account for over 83% of total network volume â€” amplifies
+    duopoly of consumer-facing applications ”” namely PhonePe and Google Pay,
+    which collectively account for over 83% of total network volume ”” amplifies
     this infrastructure stress by routing an overwhelming majority of low-value,
     high-frequency payments through a minimal number of clearing pathways.
     Public Sector Banks (PSBs), whose core banking architectures were not
@@ -345,17 +345,17 @@
     expectancy and trust are the dominant predictors of UPI use behavior,
     explaining 84.1% of the variance in usage intensity. As trust in UPI
     infrastructure deepens and its performance is validated through daily
-    micro-transactions â€” buying tea, groceries, or recharging a mobile number
-    â€” the network experiences a compounding feedback loop: greater adoption
+    micro-transactions ”” buying tea, groceries, or recharging a mobile number
+    ”” the network experiences a compounding feedback loop: greater adoption
     drives more micro-payments, which further depress the average ticket size
     and accelerate infrastructure stress. This paper addresses these structural
     dynamics through a five-phase, multi-dataset investigative pipeline,
     drawing on publicly available statistics published by the NPCI
     (https://www.npci.org.in/product/bhim/product-statistics). The primary
-    analytical layer employs advanced machine learning models â€” including
+    analytical layer employs advanced machine learning models ”” including
     XGBoost for time-series forecasting, K-Means for unsupervised merchant and
     geographic segmentation, and Random Forest for non-linear infrastructure
-    stress prediction â€” while the market concentration phase applies the
+    stress prediction ”” while the market concentration phase applies the
     classical Herfindahl-Hirschman Index (HHI) to quantify monopolization
     within the TPAP ecosystem. A complementary interactive exploratory
     dashboard, developed in parallel by the co-author, provides dynamic
@@ -413,8 +413,8 @@
   </p>
   <p>
     <strong>H1:</strong> The divergence in UPI Average Ticket Size between
-    P2P and P2M channels is a permanent structural shift â€” not a seasonal
-    event â€” and follows a non-linear adoption curve that machine learning
+    P2P and P2M channels is a permanent structural shift ”” not a seasonal
+    event ”” and follows a non-linear adoption curve that machine learning
     models will forecast significantly more accurately than traditional
     statistical baselines.
   </p>
@@ -425,8 +425,8 @@
   </p>
   <p>
     <strong>H3:</strong> The UPI micro-transaction load is monopolized by a
-    consumer application duopoly, with an HHI score exceeding 2,500 â€”
-    the regulatory threshold for a "Highly Concentrated" market â€” creating
+    consumer application duopoly, with an HHI score exceeding 2,500 ””
+    the regulatory threshold for a "Highly Concentrated" market ”” creating
     systemic concentration risk in the payment clearing layer.
   </p>
   <p>
@@ -461,16 +461,16 @@
     to create an open, interoperable real-time payments architecture that could
     serve India's heterogeneous banking ecosystem. Built on the IMPS
     infrastructure and launched by NPCI in 2016, UPI's foundational design
-    centered on the democratization of fund transfers â€” enabling any-to-any
+    centered on the democratization of fund transfers ”” enabling any-to-any
     bank transactions through a single Virtual Payment Address without
     disclosing sensitive account credentials. Singh (2025) provides
     comprehensive documentation of UPI's macroeconomic trajectory, recording
-    that transaction volume grew from approximately 915 million in FY 2017â€“18
+    that transaction volume grew from approximately 915 million in FY 2017”“18
     to thousands of crores in subsequent years, while UPI's share of India's
     total digital payment volume surged from 34% in 2019 to over 83% by 2024.
     The Observer Research Foundation (2023) further contextualizes this growth
     within India's broader digital payments story, noting that the volume of
-    digital transactions in India in 2021â€“22 was four times that of 2018â€“19, a
+    digital transactions in India in 2021”“22 was four times that of 2018”“19, a
     trajectory accelerated first by demonetization in 2016 and then by the
     COVID-19 pandemic, which compelled merchants and consumers across income
     strata to adopt digital settlement mechanisms as a necessity rather than
@@ -489,11 +489,11 @@
     semi-formal retail environments. Swetha et al. (2025), studying the impact
     of digital payment systems on small retailers in Chikkaballapura district,
     observe that QR-code-based UPI payments are replacing cash for routine,
-    low-denomination purchases across micro, small, and medium enterprises â€”
+    low-denomination purchases across micro, small, and medium enterprises ””
     a behavioral shift with direct implications for the network's Average
     Ticket Size. Critically, neither study quantifies the extent of this ATS
     divergence, models its trajectory, or investigates whether the shift is
-    structural or seasonal â€” a gap this paper addresses directly in Phase 1
+    structural or seasonal ”” a gap this paper addresses directly in Phase 1
     through machine learning forecasting.
   </p>
 
@@ -508,25 +508,25 @@
     attitude are the primary determinants of UPI use behavior, explaining 82.7%
     and 84.1% of the variance in attitude and use behavior respectively. Their
     findings implicitly identify a winner-takes-most dynamic: consumers whose
-    trust is established with a particular application â€” typically through
-    consistent, low-friction micro-transaction experiences â€” are unlikely to
+    trust is established with a particular application ”” typically through
+    consistent, low-friction micro-transaction experiences ”” are unlikely to
     switch platforms, creating powerful network effects that entrench market
     leaders. The Observer Research Foundation (2023) corroborates this
     concentration tendency at the market level, using PhonePe's own transaction
     and market share data to model UPI's national and state-wise growth
-    scenarios â€” a methodological choice that itself signals the degree to which
+    scenarios ”” a methodological choice that itself signals the degree to which
     a single player's data is treated as representative of the entire ecosystem.
   </p>
 
   <p>
     Despite these implicit signals of market concentration, the existing
     literature contains no formal application of industrial organization metrics
-    â€” such as the Herfindahl-Hirschman Index (HHI) â€” to quantify the degree of
+    ”” such as the Herfindahl-Hirschman Index (HHI) ”” to quantify the degree of
     monopolization within the UPI TPAP ecosystem. The HHI, defined as the sum
     of squared market share percentages across all participants, is the standard
     instrument used by the U.S. Department of Justice and competition regulators
     worldwide to classify markets as competitive (HHI &lt; 1,500), moderately
-    concentrated (1,500â€“2,500), or highly concentrated (&gt; 2,500) (U.S.
+    concentrated (1,500”“2,500), or highly concentrated (&gt; 2,500) (U.S.
     Department of Justice, 2010). Its absence from the UPI literature represents
     a significant methodological gap, as market concentration in payment
     infrastructure carries systemic implications that extend beyond consumer
@@ -562,7 +562,7 @@
     monthly by NPCI as part of its bank performance reporting represent the
     most granular available proxies for core banking infrastructure stress
     under UPI load. A Technical Decline occurs when a bank's settlement server
-    fails to respond within the required timeframe â€” an event that becomes
+    fails to respond within the required timeframe ”” an event that becomes
     increasingly probable as the volume and frequency of incoming micro-payment
     requests exceeds server throughput capacity. The existing literature contains
     no study that models TD% as a dependent variable in relation to UPI
@@ -593,9 +593,9 @@
   <p>
     Taken together, the literature presents three specific and interrelated
     gaps that this paper directly addresses: (1) the absence of any machine
-    learning-based forecast of the P2Pâ€“P2M ATS divergence, and the absence of
+    learning-based forecast of the P2P”“P2M ATS divergence, and the absence of
     any ablation test distinguishing structural from seasonal causation; (2) the
-    absence of any formal industrial-organization metric â€” such as the HHI â€”
+    absence of any formal industrial-organization metric ”” such as the HHI ””
     applied to the UPI TPAP ecosystem, despite implicit signals of dangerous
     market concentration; and (3) the complete absence of any study modeling
     bank Technical Decline rates as a measurable output variable of UPI
@@ -657,35 +657,35 @@
         <tr>
           <td>Phase 1</td>
           <td>UPI Macro Dataset</td>
-          <td>Jan 2022â€“Mar 2026</td>
+          <td>Jan 2022”“Mar 2026</td>
           <td>Month, P2P Volume/Value, P2M Volume/Value, Internet Subscribers</td>
           <td>Monthly aggregate</td>
         </tr>
         <tr>
           <td>Phase 2</td>
           <td>Merchant Combined Dataset</td>
-          <td>Jan 2022â€“Mar 2026</td>
+          <td>Jan 2022”“Mar 2026</td>
           <td>Merchant Category, Volume (Mn), Value (Cr)</td>
           <td>Merchant category</td>
         </tr>
         <tr>
           <td>Phase 3</td>
           <td>UPI Apps Dataset</td>
-          <td>Jan 2022â€“Mar 2026</td>
+          <td>Jan 2022”“Mar 2026</td>
           <td>App Name, Volume (Mn), Value (Cr)</td>
           <td>Application provider</td>
         </tr>
         <tr>
           <td>Phase 4</td>
           <td>Bank Performance Dataset</td>
-          <td>Jan 2022â€“Mar 2026</td>
+          <td>Jan 2022”“Mar 2026</td>
           <td>Bank Name, Volume, Approved %, BD%, TD%</td>
           <td>Bank-month observation</td>
         </tr>
         <tr>
           <td>Phase 5</td>
           <td>Statewise Combined Dataset</td>
-          <td>Jan 2022â€“Mar 2026</td>
+          <td>Jan 2022”“Mar 2026</td>
           <td>State, Volume (Mn), Value (Cr), District</td>
           <td>State aggregate</td>
         </tr>
@@ -721,7 +721,7 @@
     representing the ATS Divergence values from the one, two, and three months
     preceding each observation, enabling the XGBoost model to learn from
     short-term momentum patterns in the time series. A binary Internet
-    Subscriber index (scaled to 0â€“1) was included as an exogenous variable to
+    Subscriber index (scaled to 0”“1) was included as an exogenous variable to
     control for infrastructure-driven adoption effects. For the ablation study
     (Phase 1, V2), five additional binary festival markers were engineered:
     Is_Diwali, Is_Holi, Is_Eid, Is_Christmas_NewYear, and
@@ -752,7 +752,7 @@
     Table 2 provides a concise overview of the analytical model applied in
     each phase, the hypothesis under test, and the primary evaluation metric
     used to assess results. Detailed descriptions of each model follow in
-    Sections 3.4.1â€“3.4.5.
+    Sections 3.4.1”“3.4.5.
   </p>
 
   <!-- Table 2: Analytical Framework Summary -->
@@ -801,7 +801,7 @@
           <td>Phase 5</td>
           <td>Geographic Maturity Mapping</td>
           <td>K-Means Clustering (K=3) + Volume Concentration Analysis</td>
-          <td>â€”</td>
+          <td>””</td>
           <td>Cluster ATS; Volume Share %</td>
         </tr>
       </tbody>
@@ -824,7 +824,7 @@
     variants were trained: V1 (base model, using only lag features and internet
     subscribers) and V2 (festival-augmented model, adding five binary festival
     markers). The comparison of V1 and V2 RMSEs constitutes a formal ablation
-    study testing H1 â€” whether the ATS divergence is structurally driven or
+    study testing H1 ”” whether the ATS divergence is structurally driven or
     seasonally driven.
   </p>
 
@@ -859,17 +859,17 @@
     <em>i</em>-th application provider. Market share was computed as each
     app's proportional contribution to total network transaction volume across
     the study period. Under U.S. Department of Justice guidelines, an HHI
-    below 1,500 indicates a competitive market, 1,500â€“2,500 indicates moderate
+    below 1,500 indicates a competitive market, 1,500”“2,500 indicates moderate
     concentration, and above 2,500 indicates a highly concentrated market
     (U.S. DOJ, 2010). The computed HHI was benchmarked against this threshold
     to formally test H3.
   </p>
 
-  <h3>3.4.4 Phase 4: Bank Infrastructure Stress Test â€” Linear vs. Non-Linear Modeling</h3>
+  <h3>3.4.4 Phase 4: Bank Infrastructure Stress Test ”” Linear vs. Non-Linear Modeling</h3>
 
   <p>
-    To test H4 â€” whether bank Technical Decline rates follow a linear or
-    non-linear failure pattern â€” a comparative ML stress test was conducted.
+    To test H4 ”” whether bank Technical Decline rates follow a linear or
+    non-linear failure pattern ”” a comparative ML stress test was conducted.
     The dependent variable was the monthly TD% for each bank, and the
     independent variable was the log-transformed total transaction volume
     processed by that bank. Two models were trained on an 80/20 train-test
@@ -878,7 +878,7 @@
     Regressor (100 estimators, random_state=42), capable of capturing
     non-linear threshold effects. Model performance was evaluated using Root
     Mean Squared Error (RMSE). A lower RMSE for the Random Forest model
-    constitutes evidence of non-linear failure behavior â€” that is, servers
+    constitutes evidence of non-linear failure behavior ”” that is, servers
     operate within tolerance up to a threshold volume, beyond which failure
     rates spike catastrophically (the "tipping point" behavior described in H4).
   </p>
@@ -903,7 +903,7 @@
   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <h1><span class="section-num">4.</span> Results</h1>
 
-  <h2>4.1 Phase 1: ATS Divergence Forecasting â€” H1 Test</h2>
+  <h2>4.1 Phase 1: ATS Divergence Forecasting ”” H1 Test</h2>
 
   <p>
     Table 3 presents the performance comparison of the SARIMAX statistical
@@ -928,7 +928,7 @@
           <td>SARIMAX (Baseline)</td>
           <td>Time-series lags only</td>
           <td>215.00</td>
-          <td>â€”</td>
+          <td>””</td>
         </tr>
         <tr>
           <td>XGBoost V1 (Base)</td>
@@ -962,10 +962,10 @@
     counterintuitive result is the key finding of the ablation study: by
     performing worse with festival data, the model confirms that Indian cultural
     festivals do not drive the ATS divergence. The collapse in P2M ticket sizes
-    is not a seasonal phenomenon â€” it is a permanent structural shift in
+    is not a seasonal phenomenon ”” it is a permanent structural shift in
     consumer payment behavior. Figure 3 illustrates the forecast comparison,
     and Figure 4 presents the V2 feature importance weights, confirming that
-    lagged ATS Divergence values â€” not festival markers â€” dominate the model's
+    lagged ATS Divergence values ”” not festival markers ”” dominate the model's
     predictive signal.
   </p>
 
@@ -984,7 +984,7 @@
         <em>Figure 4.</em> XGBoost V2 feature importance weights. Lagged ATS
         Divergence (Lag-1, Lag-2, Lag-3) are the dominant predictors;
         festival binary markers contribute negligible predictive weight,
-        confirming the structural â€” not seasonal â€” nature of the decline.
+        confirming the structural ”” not seasonal ”” nature of the decline.
       </p>
     </div>
   </div>
@@ -992,12 +992,12 @@
   <p>
     <strong>H1 Verdict: Confirmed.</strong> The XGBoost model's 52.8% RMSE
     improvement over the SARIMAX baseline proves the non-linear nature of the
-    ATS divergence. The ablation study's counterintuitive result â€” that adding
-    festival data worsens performance â€” provides strong evidence that the
+    ATS divergence. The ablation study's counterintuitive result ”” that adding
+    festival data worsens performance ”” provides strong evidence that the
     structural shift is permanent and not seasonal.
   </p>
 
-  <h2>4.2 Phase 2: Merchant Clustering â€” H2 Test</h2>
+  <h2>4.2 Phase 2: Merchant Clustering ”” H2 Test</h2>
 
   <p>
     The Elbow Method (Figure 5) identified K=3 as the inflection point in the
@@ -1034,7 +1034,7 @@
           <td>0</td>
           <td>Ultra-Micro Utilities</td>
           <td>~12</td>
-          <td>121â€“253</td>
+          <td>121”“253</td>
           <td>150,000+</td>
           <td>Groceries (Rs.253), Dining &amp; Drinks (Rs.121)</td>
         </tr>
@@ -1042,7 +1042,7 @@
           <td>1</td>
           <td>Mid-Market Commerce</td>
           <td>~40</td>
-          <td>800â€“2,000</td>
+          <td>800”“2,000</td>
           <td>Medium</td>
           <td>Telecom, Pharmacies, Utility Services</td>
         </tr>
@@ -1066,7 +1066,7 @@
     in Figure 6. The High-Value Financials cluster, while recording the
     highest ATS (exceeding Rs. 8,800 for Credit Card Bill Payments and
     Securities Brokers), contributes a negligible share of total transaction
-    volume â€” confirming that high-value categories cannot offset the
+    volume ”” confirming that high-value categories cannot offset the
     network-wide ATS collapse caused by the Micro-Utility tier.
   </p>
 
@@ -1084,10 +1084,10 @@
     <strong>H2 Verdict: Confirmed.</strong> Unsupervised K-Means clustering
     objectively verified that the P2M ticket size collapse is driven primarily
     by a dominant Micro-Utility cluster anchored by groceries and daily dining
-    â€” not by discretionary, high-value, or financial service purchases.
+    ”” not by discretionary, high-value, or financial service purchases.
   </p>
 
-  <h2>4.3 Phase 3: App Market Concentration â€” H3 Test</h2>
+  <h2>4.3 Phase 3: App Market Concentration ”” H3 Test</h2>
 
   <p>
     The volume market share analysis of UPI Third-Party Application Providers
@@ -1098,9 +1098,9 @@
     substantially exceeds the U.S. DOJ "Highly Concentrated" market threshold
     of 2,500, as shown in Figure 7. Figure 8 visualizes the duopoly's
     dominance, and Figure 9 illustrates the economic bifurcation in ATS across
-    applications â€” micro-utility apps (PhonePe, GPay) operate at the ecosystem's
+    applications ”” micro-utility apps (PhonePe, GPay) operate at the ecosystem's
     average ATS of Rs. 1,453, while niche high-value apps such as CRED reach
-    Rs. 3,983 and YuvaPay Rs. 19,400 â€” serving an entirely different
+    Rs. 3,983 and YuvaPay Rs. 19,400 ”” serving an entirely different
     transaction profile.
   </p>
 
@@ -1136,13 +1136,13 @@
 
   <p>
     <strong>H3 Verdict: Confirmed.</strong> The UPI TPAP ecosystem records an
-    HHI of 3,383.7 â€” 35.3% above the highly concentrated market threshold of
+    HHI of 3,383.7 ”” 35.3% above the highly concentrated market threshold of
     2,500. This constitutes formal econometric proof of a dangerous market
     duopoly, with two foreign-owned applications controlling over 83% of
     India's national digital payment infrastructure.
   </p>
 
-  <h2>4.4 Phase 4: Bank Infrastructure Stress Test â€” H4 Test</h2>
+  <h2>4.4 Phase 4: Bank Infrastructure Stress Test ”” H4 Test</h2>
 
   <p>
     Table 5 presents the comparative performance of the Linear Regression
@@ -1166,14 +1166,14 @@
         <tr>
           <td>Multiple Linear Regression</td>
           <td>3.75</td>
-          <td>â€“0.007</td>
-          <td>Fails to model TD% from volume â€” no linear relationship</td>
+          <td>”“0.007</td>
+          <td>Fails to model TD% from volume ”” no linear relationship</td>
         </tr>
         <tr>
           <td>Random Forest Regressor</td>
           <td>3.64</td>
           <td>0.052</td>
-          <td>Captures non-linear volumeâ€“failure relationship</td>
+          <td>Captures non-linear volume”“failure relationship</td>
         </tr>
       </tbody>
     </table>
@@ -1181,14 +1181,14 @@
 
   <p>
     <em>Note.</em> A negative RÂ² for Linear Regression indicates the model
-    performs worse than a horizontal mean prediction â€” confirming the
+    performs worse than a horizontal mean prediction ”” confirming the
     complete absence of a linear relationship between volume and TD%.
   </p>
 
   <p>
     The Random Forest model outperformed Linear Regression across both metrics.
     Critically, the Linear Regression's near-zero and negative RÂ² reveals that
-    volume and TD% have no meaningful linear relationship â€” servers do not
+    volume and TD% have no meaningful linear relationship ”” servers do not
     degrade gradually in proportion to transaction load. Instead, the Random
     Forest's superior performance confirms that failures occur at non-linear
     capacity thresholds. The historical statistical analysis further reveals
@@ -1239,14 +1239,14 @@
     fails at non-linear tipping points, not through gradual degradation.
   </p>
 
-  <h2>4.5 Phase 5: Geographic Analysis â€” State Maturity Mapping</h2>
+  <h2>4.5 Phase 5: Geographic Analysis ”” State Maturity Mapping</h2>
 
   <p>
     The geographic analysis reveals two complementary dimensions of spatial
     concentration in the UPI network. First, a volume concentration analysis
-    demonstrates that just four states â€” Maharashtra (74,979 Mn transactions),
+    demonstrates that just four states ”” Maharashtra (74,979 Mn transactions),
     Karnataka (39,774 Mn), Uttar Pradesh (35,449 Mn), and Telangana
-    (30,676 Mn) â€” collectively account for <strong>42.5%</strong> of the
+    (30,676 Mn) ”” collectively account for <strong>42.5%</strong> of the
     entire classified Indian UPI network volume (Figure 13). Second, the
     K-Means clustering (K=3) of all 73 classified states and union territories
     by volume and ATS reveals three distinct UPI maturity tiers, summarized
@@ -1307,13 +1307,13 @@
 
   <p>
     A striking finding emerges from the ATS comparison (Figure 14):
-    Uttar Pradesh â€” a predominantly rural and semi-urban state â€” records a
+    Uttar Pradesh ”” a predominantly rural and semi-urban state ”” records a
     lower ATS (Rs. 1,370) than the technology hub of Karnataka (Rs. 1,389),
     indicating that QR-code micro-transactions have penetrated the rural
     heartland as deeply as India's most urbanized tech corridors. The Emerging
     Adopters cluster's lowest average ATS (Rs. 1,368) across 52 states
     mathematically confirms that as UPI expands geographically, it does so
-    almost exclusively as a micro-payment utility â€” not as a high-value
+    almost exclusively as a micro-payment utility ”” not as a high-value
     transfer tool. Figure 15 presents the full state cluster scatter plot.
   </p>
 
@@ -1356,10 +1356,10 @@
   <h2>5.1 Structural Permanence of ATS Divergence</h2>
   <p>
     The XGBoost model's 52.8% RMSE improvement over SARIMAX confirms that the
-    P2Pâ€“P2M ticket size divergence is non-linear and momentum-driven, not a
+    P2P”“P2M ticket size divergence is non-linear and momentum-driven, not a
     mean-reverting cyclical pattern. More decisively, the ablation study's
-    counter-intuitive result â€” that adding festival markers <em>worsens</em>
-    forecast accuracy (V2: 105.29 vs. V1: 101.51) â€” is direct empirical proof
+    counter-intuitive result ”” that adding festival markers <em>worsens</em>
+    forecast accuracy (V2: 105.29 vs. V1: 101.51) ”” is direct empirical proof
     that the ATS collapse is not seasonal. It is a permanent structural shift
     driven by daily micro-utility habituation, and it cannot be addressed by
     seasonal liquidity policy; it demands a structural infrastructure response.
@@ -1368,8 +1368,8 @@
   <h2>5.2 The Micro-Utility Cluster as Root Cause</h2>
   <p>
     K-Means clustering objectively identifies the Ultra-Micro Utilities cluster
-    â€” anchored by Groceries (ATS: Rs. 253) and Dining &amp; Drinks (ATS: Rs. 121)
-    â€” as the quantified source of the network-wide ATS collapse. The critical
+    ”” anchored by Groceries (ATS: Rs. 253) and Dining &amp; Drinks (ATS: Rs. 121)
+    ”” as the quantified source of the network-wide ATS collapse. The critical
     implication is what it rules out: the High-Value Financials cluster (ATS:
     Rs. 8,800+) simultaneously coexists in the network but contributes negligible
     volume weight. Growing high-value UPI categories will not recover the network
@@ -1393,15 +1393,15 @@
 
   <h2>5.4 Non-Linear Failure: The Tipping-Point Architecture Problem</h2>
   <p>
-    The Linear Regression's RÂ² of â€“0.007 is not a weak result â€” it is a
+    The Linear Regression's RÂ² of ”“0.007 is not a weak result ”” it is a
     decisive one, proving zero meaningful linear relationship between volume
     and Technical Decline rate. Bank servers do not degrade proportionally;
     they hold within a tolerance envelope and then fail catastrophically at
     a threshold. This is the signature of monolithic queue-saturating
     architectures. The critical operational risk is that standard linear
     monitoring frameworks will show banks operating within safe headroom
-    right up to the moment of non-linear failure. SBI â€” the highest-volume
-    node in the dataset (100.8 million transactions; TD%: 2.12%) â€” is, by
+    right up to the moment of non-linear failure. SBI ”” the highest-volume
+    node in the dataset (100.8 million transactions; TD%: 2.12%) ”” is, by
     this model's logic, the node most proximate to a tipping-point event.
   </p>
 
@@ -1411,7 +1411,7 @@
     finding is below that apex: the 52-state Emerging Adopters cluster records
     the <em>lowest</em> average ATS (Rs. 1,368) of any tier, confirming that
     new-adopting states enter the UPI ecosystem exclusively as micro-payment
-    utilities. Uttar Pradesh â€” rural, low per-capita income â€” records a lower
+    utilities. Uttar Pradesh ”” rural, low per-capita income ”” records a lower
     ATS (Rs. 1,370) than tech-hub Karnataka (Rs. 1,389). This confirms that
     the micro-transaction stress cascade is not urban-contained; it is
     converging on rural PSB infrastructure that is even more capacity-constrained
@@ -1426,7 +1426,7 @@
     non-linear tipping-point failures in PSB infrastructure (H4), and is
     actively spreading into rural banking corridors (Phase 5). Every increment
     of new UPI adoption accelerates all five stages simultaneously, meaning the
-    conventional growth metric â€” total transaction volume â€” is simultaneously
+    conventional growth metric ”” total transaction volume ”” is simultaneously
     a leading indicator of escalating systemic risk.
   </p>
 
@@ -1437,28 +1437,28 @@
     Swetha et al. (2025) noted rising micro-payment share; K-Means objectively
     identifies the specific merchant clusters responsible. Rahim et al. (2024)
     modeled trust-driven adoption; this study measures the downstream consequence
-    â€” HHI 3,383.7 â€” that winner-takes-most adoption inevitably produces. Singh
+    ”” HHI 3,383.7 ”” that winner-takes-most adoption inevitably produces. Singh
     (2025) and the Observer Research Foundation (2023) flagged infrastructure
     capacity as a constraint; Phase 4 operationalizes it as a non-linear,
-    tipping-point failure variable â€” a qualitative distinction with profound
+    tipping-point failure variable ”” a qualitative distinction with profound
     risk management consequences.
   </p>
 
   <h2>5.8 Policy and Regulatory Implications</h2>
   <p>
-    <strong>For NPCI:</strong> The HHI of 3,383.7 and PhonePe's 50.06% share â€”
-    nearly double the 30% regulatory cap â€” provide formal econometric
+    <strong>For NPCI:</strong> The HHI of 3,383.7 and PhonePe's 50.06% share ””
+    nearly double the 30% regulatory cap ”” provide formal econometric
     justification for active enforcement. <strong>For the RBI:</strong> Linear
     capacity monitoring frameworks must be replaced by non-linear stress testing
     for UPI-processing PSBs, particularly SBI and Central Bank of India.
     <strong>For PSB technology leadership:</strong> The tipping-point failure
     signature demands migration from monolithic batch-processing to
     cloud-native, horizontally scalable microservices. <strong>For digital
-    inclusion policymakers:</strong> Rural adoption mandates are succeeding â€”
+    inclusion policymakers:</strong> Rural adoption mandates are succeeding ””
     but must be paired with equivalent PSB infrastructure investment in rural
     corridors, or risk accelerating failures in the weakest network nodes.
-    populous state â€” predominantly rural, with a per-capita income well below
-    the national average â€” records a lower ATS (Rs. 1,370) than Karnataka
+    populous state ”” predominantly rural, with a per-capita income well below
+    the national average ”” records a lower ATS (Rs. 1,370) than Karnataka
     (Rs. 1,389), the home of Bengaluru's technology economy. This is not
     an anomaly; it is evidence that QR-code micro-payment adoption has
     already saturated rural Uttar Pradesh at the same behavioral patterns
@@ -1467,7 +1467,7 @@
     disproportionately by the same Public Sector Banks that Phase 4 identifies
     as the most infrastructure-stressed participants in the UPI network.
     The stress cascade is, therefore, not merely nationalizing geographically
-    â€” it is converging on the most structurally vulnerable nodes in the system.
+    ”” it is converging on the most structurally vulnerable nodes in the system.
   </p>
 
   <!-- SECTION 6: CONCLUSION -->
@@ -1600,7 +1600,7 @@
       <strong>Code &amp; Reproducibility:</strong>
       All Python ML scripts, preprocessed data, and generated figures are
       available at the project repository &#8212;
-      <a href="[GITHUB_LINK]" target="_blank" id="github-repo-link">[GitHub repository link &#8212; to be updated]</a>
+      <a href="https://github.com/alkaifaftab000/Lipi" target="_blank" id="github-repo-link">https://github.com/alkaifaftab000/Lipi</a>
     </p>
 
   </div>

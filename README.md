@@ -2,6 +2,9 @@
 
 > **Beneath the Trillion-Transaction Milestone: A Machine Learning Investigation of Systemic Risk in India's UPI Ecosystem**
 
+🔗 **Repository:** [https://github.com/alkaifaftab000/Lipi](https://github.com/alkaifaftab000/Lipi)
+
+
 A five-phase empirical study applying machine learning to publicly available NPCI data to investigate structural risks hidden beneath UPI's aggregate transaction growth.
 
 ---
