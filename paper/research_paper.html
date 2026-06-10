@@ -192,20 +192,35 @@
     }
 
     /* â”€â”€ Print / Export â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-    /* A4 Print + Running Header & Footer */
+    /* Screen running header */
+    .screen-header {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 999;
+      background: rgba(255,255,255,0.92);
+      padding: 5px 14px 4px 14px;
+      border-bottom-left-radius: 6px;
+      border-bottom: 1px solid #dde;
+      border-left: 1px solid #dde;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 9pt;
+      font-style: italic;
+      color: #1a2e6e;
+      letter-spacing: 0.02em;
+      pointer-events: none;
+    }
+
+    /* Print: running header + page numbers */
     @page {
       size: A4;
       margin: 1.1in 1in 0.9in 1in;
-    }
-    @page {
       @top-right {
         content: "Amity University";
         font-family: "Times New Roman", Times, serif;
         font-size: 9pt;
         color: #1a2e6e;
         font-style: italic;
-        vertical-align: bottom;
-        padding-bottom: 3pt;
       }
       @bottom-center {
         content: counter(page);
@@ -219,6 +234,7 @@
       body { background: #fff; }
       .paper { box-shadow: none; margin: 0; width: 100%; }
       .cover { box-shadow: none; }
+      .screen-header { display: none; }
     }
 
     /* Cover Page */
@@ -330,6 +346,9 @@
 </head>
 <body>
 
+<!-- Running header visible on screen -->
+<div class="screen-header">Amity University</div>
+
 <!-- COVER PAGE -->
 <div class="cover">
 
@@ -372,19 +391,18 @@
     <!-- Author box -->
     <div class="cover-author-box">
       <span class="cover-author-name">Lipi Virmani</span>
+      <div class="cover-author-row">Final Year MBA Student</div>
       <div class="cover-author-row">
-        <span class="cover-label-inline">Role:</span> Corresponding Author &nbsp;|&nbsp;
-        <span class="cover-label-inline">Programme:</span> Final Year MBA
+        <span class="cover-label-inline">Roll No.:</span> _______________
       </div>
+      <div class="cover-author-row">Department of Management Studies, Amity University</div>
       <div class="cover-author-row">
-        <span class="cover-label-inline">Roll No.:</span> &nbsp;_______________
-      </div>
-      <div class="cover-author-row">
-        <span class="cover-label-inline">Department:</span> Management Studies, Amity University
+        <span class="cover-label-inline">Corresponding Author:</span>
+        <a href="mailto:lipiv14@gmail.com" style="color:#1a2e6e;">lipiv14@gmail.com</a>
       </div>
     </div>
 
-    <div class="cover-submitted">Submitted: June 2026</div>
+    <div class="cover-submitted">Submitted: 11 June 2026</div>
 
   </div>
 
